@@ -100,14 +100,14 @@ class MainActivity : AppCompatActivity() {
 
     // 새로운 문제를 화면에 표시하는 함수
     private fun showNewQuiz(
-        explanationTextView: TextView,
+        expTextView: TextView,
         answerEditText: EditText,
         resultTextView: TextView,
         checkButton: Button
     ) {
         resultTextView.text = ""  // 결과 텍스트 초기화
         val currentIdiom = idioms[currentQIndex]
-        explanationTextView.text = currentIdiom.q  // 설명을 텍스트뷰에 설정
+        expTextView.text = currentIdiom.q  // 설명을 텍스트뷰에 설정
     }
 
     // 사용자가 입력한 답이 정답인지 확인하는 함수
