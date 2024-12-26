@@ -1,0 +1,97 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+    <!-- 문제 설명 카드 -->
+
+    <!-- 사자성어 정답 입력란 -->
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="상대방과 자신을 알면 백전백승이다."
+            android:textAlignment="center"
+            android:textColor="#333333"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="사자성어를 입력하세요"
+        android:padding="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#333333"
+        android:privateImeOptions="defaultInputmode=korean"
+    />
+
+    <!-- 제출 버튼 -->
+    <Button
+        android:id="@+id/checkButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제출"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#6200EE"
+        android:padding="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- 결과 표시 -->
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과가 여기에 표시됩니다"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="sans-serif"/>
+
+    <!-- 다시하기 버튼 -->
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#6200EE"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:text="다시하기"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>
